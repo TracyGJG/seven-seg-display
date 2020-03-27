@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+section {
+  float: left;
+  width: 600px;
+  height: 200px;
+  columns: 4;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.seven-seg {
+  float: left;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 2em;
+  margin-left: 4em;
+}
+
+.seven-seg > * {
+  background-color: #333;
+  border-color: #333;
+  position: absolute;
+}
+
+.seven-seg > *::before,
+.seven-seg > *::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.seg0,
+.seg3,
+.seg6 {
+  width: 60px;
+  height: 20px;
+  top: 0;
+  left: 21px;
+}
+
+.seg1,
+.seg2,
+.seg4,
+.seg5 {
+  width: 20px;
+  height: 60px;
+  top: 21px;
+  left: 0;
+}
+
+.seg2 {
+  left: 82px;
+}
+
+.seg3 {
+  top: 82px;
+}
+
+.seg4,
+.seg5 {
+  top: 103px;
+}
+
+.seg5 {
+  left: 82px;
+}
+
+.seg6 {
+  top: 164px;
+}
+
+.seg0::before,
+.seg3::before,
+.seg6::before {
+  left: -10px;
+  border-left-width: 0;
+  border-right-color: inherit;
+}
+
+.seg0::after,
+.seg3::after,
+.seg6::after {
+  right: -10px;
+  border-right-width: 0;
+  border-left-color: inherit;
+}
+
+.seg1::before,
+.seg2::before,
+.seg4::before,
+.seg5::before {
+  top: -10px;
+  border-top-width: 0;
+  border-bottom-color: inherit;
+}
+
+.seg1::after,
+.seg2::after,
+.seg4::after,
+.seg5::after {
+  bottom: -10px;
+  border-bottom-width: 0;
+  border-top-color: inherit;
+}
+
+.seven-seg.--seg0 .seg0,
+.seven-seg.--seg1 .seg1,
+.seven-seg.--seg2 .seg2,
+.seven-seg.--seg3 .seg3,
+.seven-seg.--seg4 .seg4,
+.seven-seg.--seg5 .seg5,
+.seven-seg.--seg6 .seg6 {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+label {
+  width: 100%;
+  color: #fff;
+  display: block;
+  padding: 0.25em;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
