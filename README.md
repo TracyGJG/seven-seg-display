@@ -1,6 +1,6 @@
 # seven-seg-display
 
-## 7-segment Display Project
+## 7-segment Display Emulator
 
 This project involved emulating the presentation and processing of a 7-segment display such as those used on digital clocks and watches.
 7SD are great for showing decimal digits 0-9 but can also show (with some compromises) the 6 letters (AbCdEF) required for hexidecimal digits.
