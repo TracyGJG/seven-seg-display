@@ -47,3 +47,5 @@ Now the mapping is a little more complicated and needs processing in order to pr
 In the final example we simulate what is happening within the IC with 16 wires going in [I0-I15] (one for each hexidecimal digit) and 7 out-going wires [O0-O6] (one for each segment.) This example demonstrates just how simple the IC is inside, linking groups of in-bound wires to out-bound. So digits that require, say, the middle horizontal segment (3), such as digits (2, 3, 4, 5, 6, 8, 9, A, b, d, E and F) are all connected to out-going wire O3.
 
 #### The next project will build on this idea to emulate a 16-segment display, capable of presenting digits and letters in upper and lower case.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0edeab0d-9b3c-4320-a973-d7991ef4a407/deploy-status)](https://app.netlify.com/sites/seven-segment-display-emulator/deploys)
